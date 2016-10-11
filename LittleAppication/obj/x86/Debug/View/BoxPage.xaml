@@ -7,10 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     
-    <Grid  Name="ColorGrid">
+    <Grid x:ConnectionId='1'  Name="ColorGrid">
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="VisualStateGroup">
-                <VisualState x:Name="visualPhone">
+            <VisualStateGroup x:ConnectionId='2' x:Name="VisualStateGroup">
+                <VisualState x:ConnectionId='3' x:Name="visualPhone">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
@@ -20,7 +20,7 @@
                         <Setter Target="MessageTextBlock.FontSize" Value="18"/>
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:Name="visualsub">
+                <VisualState x:ConnectionId='4' x:Name="visualsub">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="400"/>
                     </VisualState.StateTriggers>
@@ -30,7 +30,7 @@
                         <Setter Target="MessageTextBlock.FontSize" Value="25"/>
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:Name="visualpic">
+                <VisualState x:ConnectionId='5' x:Name="visualpic">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="800"/>
                     </VisualState.StateTriggers>
@@ -40,7 +40,7 @@
                         <Setter Target="MessageTextBlock.FontSize" Value="35"/>
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:Name="VisualStateNormal">
+                <VisualState x:ConnectionId='6' x:Name="VisualStateNormal">
                     <VisualState.Setters>
                         <Setter Target="MessageTextBlock.(TextBlock.FontSize)" Value="50"/>
                     </VisualState.Setters>
@@ -53,7 +53,8 @@
 
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-        <TextBlock Name="MessageTextBlock" FontSize="10" Text="你是我天边最美的云彩"/>
+        <TextBlock x:ConnectionId='7' Name="MessageTextBlock" FontSize="10" Text="你是我天边最美的云彩"/>
 
     </Grid>
 </Page>
+
