@@ -72,7 +72,11 @@
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
             <Frame Name="MyFrame">
-
+                <Frame.Transitions>
+                    <TransitionCollection>
+                        <NavigationThemeTransition/>
+                    </TransitionCollection>
+                </Frame.Transitions>
             </Frame>
             <Image Source="Assets/background.jpg" Grid.Column="1" Stretch="UniformToFill" />
 

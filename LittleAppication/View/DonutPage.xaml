@@ -7,7 +7,29 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="Red">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
 
+            <Image Source="/Assets/logo.png"  Width="150" Height="150" Stretch="UniformToFill" HorizontalAlignment="Left" Margin="10"/>
+            <TextBlock Grid.Row="1" Text="Original GlaZed Count" Margin="10,10,0,10" Foreground="White" />
+            <TextBlock Grid.Row="2" Text="Speedway Special Count" Margin="10,10,0,10" Foreground="White"/>
+            <Slider Grid.Row="1" Grid.Column="1" Margin="10,0,10,10" Maximum="24"/>
+            <Slider Grid.Row="2" Grid.Column="1" Margin="10,0,10,10" Maximum="24"/>
+
+        </Grid>
+       
     </Grid>
 </Page>
