@@ -6,15 +6,19 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Grid  Name="ColorGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition/>
+        </TransitionCollection>
+    </Page.Transitions>
+    <Grid  Name="ColorGrid">
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:Name="VisualStateGroup">
                 <VisualState x:Name="visualPhone">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
-                    
+
                     <VisualState.Setters>
                         <Setter Target="ColorGrid.Background" Value="Red"/>
                         <Setter Target="MessageTextBlock.FontSize" Value="18"/>
@@ -39,6 +43,16 @@
                         <Setter Target="ColorGrid.Background" Value="Green"/>
                         <Setter Target="MessageTextBlock.FontSize" Value="35"/>
                     </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateNormal">
+                    <VisualState.Setters>
+                        <Setter Target="MessageTextBlock.(TextBlock.FontSize)" Value="50"/>
+                    </VisualState.Setters>
+
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="300"/>
+                    </VisualState.StateTriggers>
+                   
                 </VisualState>
 
             </VisualStateGroup>
