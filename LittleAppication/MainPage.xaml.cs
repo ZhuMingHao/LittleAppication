@@ -29,22 +29,22 @@ namespace LittleAppication
 
         private void Donut_Click(object sender, RoutedEventArgs e)
         {
-
+            MyFrame.Navigate(typeof(DonutPage));
         }
 
         private void box_Click(object sender, RoutedEventArgs e)
         {
-
+            MyFrame.Navigate(typeof(CoffeePage));
         }
 
         private void clock_Click(object sender, RoutedEventArgs e)
         {
-
+            MyFrame.Navigate(typeof(SchedulePage));
         }
 
         private void coffee_Click(object sender, RoutedEventArgs e)
         {
-
+            MyFrame.Navigate(typeof(BoxPage));
         }
     }
 }

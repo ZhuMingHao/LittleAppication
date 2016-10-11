@@ -1,5 +1,6 @@
 App.xbf
-CoffeePage.xbf
-DonutPage.xbf
 MainPage.xbf
-SchedulePage.xbf
+View\BoxPage.xbf
+View\CoffeePage.xbf
+View\DonutPage.xbf
+View\SchedulePage.xbf

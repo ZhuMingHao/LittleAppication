@@ -132,23 +132,21 @@ namespace LittleAppication.LittleAppication_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
-            _typeNameTable[0] = "LittleAppication.BoxPage";
+            _typeNameTable = new string[6];
+            _typeNameTable[0] = "LittleAppication.CoffeePage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "LittleAppication.CoffeePage";
-            _typeNameTable[4] = "LittleAppication.DonutPage";
-            _typeNameTable[5] = "LittleAppication.MainPage";
-            _typeNameTable[6] = "LittleAppication.SchedulePage";
+            _typeNameTable[3] = "LittleAppication.DonutPage";
+            _typeNameTable[4] = "LittleAppication.MainPage";
+            _typeNameTable[5] = "LittleAppication.SchedulePage";
 
-            _typeTable = new global::System.Type[7];
-            _typeTable[0] = typeof(global::LittleAppication.BoxPage);
+            _typeTable = new global::System.Type[6];
+            _typeTable[0] = typeof(global::LittleAppication.CoffeePage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::LittleAppication.CoffeePage);
-            _typeTable[4] = typeof(global::LittleAppication.DonutPage);
-            _typeTable[5] = typeof(global::LittleAppication.MainPage);
-            _typeTable[6] = typeof(global::LittleAppication.SchedulePage);
+            _typeTable[3] = typeof(global::LittleAppication.DonutPage);
+            _typeTable[4] = typeof(global::LittleAppication.MainPage);
+            _typeTable[5] = typeof(global::LittleAppication.SchedulePage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -183,11 +181,10 @@ namespace LittleAppication.LittleAppication_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_BoxPage() { return new global::LittleAppication.BoxPage(); }
-        private object Activate_3_CoffeePage() { return new global::LittleAppication.CoffeePage(); }
-        private object Activate_4_DonutPage() { return new global::LittleAppication.DonutPage(); }
-        private object Activate_5_MainPage() { return new global::LittleAppication.MainPage(); }
-        private object Activate_6_SchedulePage() { return new global::LittleAppication.SchedulePage(); }
+        private object Activate_0_CoffeePage() { return new global::LittleAppication.CoffeePage(); }
+        private object Activate_3_DonutPage() { return new global::LittleAppication.DonutPage(); }
+        private object Activate_4_MainPage() { return new global::LittleAppication.MainPage(); }
+        private object Activate_5_SchedulePage() { return new global::LittleAppication.SchedulePage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -199,9 +196,9 @@ namespace LittleAppication.LittleAppication_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  LittleAppication.BoxPage
+            case 0:   //  LittleAppication.CoffeePage
                 userType = new global::LittleAppication.LittleAppication_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_BoxPage;
+                userType.Activator = Activate_0_CoffeePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -214,30 +211,23 @@ namespace LittleAppication.LittleAppication_XamlTypeInfo
                 xamlType = new global::LittleAppication.LittleAppication_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  LittleAppication.CoffeePage
+            case 3:   //  LittleAppication.DonutPage
                 userType = new global::LittleAppication.LittleAppication_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_CoffeePage;
+                userType.Activator = Activate_3_DonutPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  LittleAppication.DonutPage
+            case 4:   //  LittleAppication.MainPage
                 userType = new global::LittleAppication.LittleAppication_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_DonutPage;
+                userType.Activator = Activate_4_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  LittleAppication.MainPage
+            case 5:   //  LittleAppication.SchedulePage
                 userType = new global::LittleAppication.LittleAppication_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_MainPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 6:   //  LittleAppication.SchedulePage
-                userType = new global::LittleAppication.LittleAppication_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_SchedulePage;
+                userType.Activator = Activate_5_SchedulePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
