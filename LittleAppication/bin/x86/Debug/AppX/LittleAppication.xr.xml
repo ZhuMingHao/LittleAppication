@@ -94,6 +94,10 @@
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition" />
     <RootType FullName="LittleAppication.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.CalendarDatePicker">
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TimePicker" />
     <RootType FullName="LittleAppication.SchedulePage" />
   </Roots.RootTypes>
 </Roots>
