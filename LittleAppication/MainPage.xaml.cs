@@ -25,6 +25,7 @@ namespace LittleAppication
         public MainPage()
         {
             this.InitializeComponent();
+            MyFrame.Navigate(typeof(DonutPage));
         }
 
         private void Donut_Click(object sender, RoutedEventArgs e)
